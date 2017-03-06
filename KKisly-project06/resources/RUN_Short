@@ -1,0 +1,258 @@
+-----------------------------------------------------
+-----------------------------------------------------
+Test file: Test file: resources/inventory_short.txt
+
+NOTES: Testing adding and removing items from the trees
+with the Lazy and Hard removal functionality. 
+Checking case with short version of items list.
+-----------------------------------------------------
+
+Garbage collection threshold = 2
+
+
+Update at line #1: add soup
+"hard" number of unique items (i.e. mSizeHard) = 1
+"soft" number of unique items (i.e. mSize) = 1
+
+Testing traversing "hard" inventory:
+soup:1  
+
+Testing traversing "soft" inventory:
+soup:1  
+
+
+at line #1: add soup
+First item: soup:1 
+Last item: soup:1 
+
+
+Update at line #2: add tangerines
+"hard" number of unique items (i.e. mSizeHard) = 2
+"soft" number of unique items (i.e. mSize) = 2
+
+Testing traversing "hard" inventory:
+soup:1  tangerines:1  
+
+Testing traversing "soft" inventory:
+soup:1  tangerines:1  
+
+
+at line #2: add tangerines
+First item: soup:1 
+Last item: tangerines:1 
+
+
+Update at line #3: add turnips
+"hard" number of unique items (i.e. mSizeHard) = 3
+"soft" number of unique items (i.e. mSize) = 3
+
+Testing traversing "hard" inventory:
+soup:1  tangerines:1  turnips:1  
+
+Testing traversing "soft" inventory:
+soup:1  tangerines:1  turnips:1  
+
+
+at line #3: add turnips
+First item: soup:1 
+Last item: turnips:1 
+
+
+Update at line #4: add milk
+"hard" number of unique items (i.e. mSizeHard) = 4
+"soft" number of unique items (i.e. mSize) = 4
+
+Testing traversing "hard" inventory:
+milk:1  soup:1  tangerines:1  turnips:1  
+
+Testing traversing "soft" inventory:
+milk:1  soup:1  tangerines:1  turnips:1  
+
+
+at line #4: add milk
+First item: milk:1 
+Last item: turnips:1 
+
+
+Update at line #5: add apples
+"hard" number of unique items (i.e. mSizeHard) = 5
+"soft" number of unique items (i.e. mSize) = 5
+
+Testing traversing "hard" inventory:
+apples:1  milk:1  soup:1  tangerines:1  turnips:1  
+
+Testing traversing "soft" inventory:
+apples:1  milk:1  soup:1  tangerines:1  turnips:1  
+
+
+at line #5: add apples
+First item: apples:1 
+Last item: turnips:1 
+
+
+Update at line #6: add apples
+"hard" number of unique items (i.e. mSizeHard) = 5
+"soft" number of unique items (i.e. mSize) = 5
+
+Testing traversing "hard" inventory:
+apples:2  milk:1  soup:1  tangerines:1  turnips:1  
+
+Testing traversing "soft" inventory:
+apples:2  milk:1  soup:1  tangerines:1  turnips:1  
+
+
+at line #6: add apples
+First item: apples:2 
+Last item: turnips:1 
+
+
+Update at line #7: add apples
+"hard" number of unique items (i.e. mSizeHard) = 5
+"soft" number of unique items (i.e. mSize) = 5
+
+Testing traversing "hard" inventory:
+apples:3  milk:1  soup:1  tangerines:1  turnips:1  
+
+Testing traversing "soft" inventory:
+apples:3  milk:1  soup:1  tangerines:1  turnips:1  
+
+
+at line #7: add apples
+First item: apples:3 
+Last item: turnips:1 
+
+
+Update at line #8: add bread
+"hard" number of unique items (i.e. mSizeHard) = 6
+"soft" number of unique items (i.e. mSize) = 6
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  milk:1  soup:1  tangerines:1  turnips:1  
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  milk:1  soup:1  tangerines:1  turnips:1  
+
+
+at line #8: add bread
+First item: apples:3 
+Last item: turnips:1 
+
+
+Update at line #9: buy soup
+"hard" number of unique items (i.e. mSizeHard) = 6
+"soft" number of unique items (i.e. mSize) = 5
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  milk:1  soup:0  tangerines:1  turnips:1  
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  milk:1  tangerines:1  turnips:1  
+
+
+at line #9: buy soup
+First item: apples:3 
+Last item: turnips:1 
+
+
+Update at line #10: buy milk
+"hard" number of unique items (i.e. mSizeHard) = 6
+"soft" number of unique items (i.e. mSize) = 4
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  milk:0  soup:0  tangerines:1  turnips:1  
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  tangerines:1  turnips:1  
+
+
+at line #10: buy milk
+First item: apples:3 
+Last item: turnips:1 
+
+at line #10: buy milk
+calling garbage collection...
+
+inventory after garbage collection:
+"hard" number of unique items (i.e. mSizeHard) = 4
+"soft" number of unique items (i.e. mSize) = 4
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  tangerines:1  turnips:1  
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  turnips:1  
+
+
+
+Update at line #11: buy bread
+"hard" number of unique items (i.e. mSizeHard) = 4
+"soft" number of unique items (i.e. mSize) = 3
+
+Testing traversing "hard" inventory:
+apples:3  bread:0  tangerines:1  turnips:1  
+
+Testing traversing "soft" inventory:
+apples:3  turnips:1  
+
+
+at line #11: buy bread
+First item: apples:3 
+Last item: turnips:1 
+
+
+Update at line #12: buy apples
+"hard" number of unique items (i.e. mSizeHard) = 4
+"soft" number of unique items (i.e. mSize) = 3
+
+Testing traversing "hard" inventory:
+apples:2  bread:0  tangerines:1  turnips:1  
+
+Testing traversing "soft" inventory:
+apples:2  turnips:1  
+
+
+at line #12: buy apples
+First item: apples:2 
+Last item: turnips:1 
+
+
+Update at line #13: buy apples
+"hard" number of unique items (i.e. mSizeHard) = 4
+"soft" number of unique items (i.e. mSize) = 3
+
+Testing traversing "hard" inventory:
+apples:1  bread:0  tangerines:1  turnips:1  
+
+Testing traversing "soft" inventory:
+apples:1  turnips:1  
+
+
+at line #13: buy apples
+First item: apples:1 
+Last item: turnips:1 
+
+
+State of inventory before cleanup:
+"hard" number of unique items (i.e. mSizeHard) = 4
+"soft" number of unique items (i.e. mSize) = 3
+
+Testing traversing "hard" inventory:
+apples:1  bread:0  tangerines:1  turnips:1  
+
+Testing traversing "soft" inventory:
+apples:1  turnips:1  
+
+
+
+Final state of inventory after cleanup:
+"hard" number of unique items (i.e. mSizeHard) = 2
+"soft" number of unique items (i.e. mSize) = 3
+
+Testing traversing "hard" inventory:
+apples:1  turnips:1  
+
+Testing traversing "soft" inventory:
+apples:1  
+
+
+Done with SuperMarket.

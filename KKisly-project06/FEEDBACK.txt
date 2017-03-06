@@ -1,0 +1,66 @@
+FEEDBACK:
+
+Good implementation of garbage collection of your LazySearchTree class.
+  You are very close.
+  Make sure to increase the implementation coverage of your test cases.
+
+
+-2 After garbage collection hard size and soft size must match.	
+   See sample output 1 and 2 below.
+
+
+-0 Missing documentation for your class Traverser, class Item, etc. in Javadocs.
+   Did you forget to verify whether your index.html file in "doc" folder generated correctly? 
+   Next time minus for this.
+   
+
+other comments:
+In your README you state that "inventory_short_debugging.txt" is for "with better human reading option".
+    Please clarify how this test file is easier for you to read.
+    
+    
+-Bita.
+
+
+
+sample output 1:
+...
+State of inventory before cleanup:
+"hard" number of unique items (i.e. mSizeHard) = 1
+"soft" number of unique items (i.e. mSize) = 1
+
+Testing traversing "hard" inventory:
+bread:0  butter:1  
+
+Testing traversing "soft" inventory:
+butter:1  
+
+
+
+Final state of inventory after cleanup:
+"hard" number of unique items (i.e. mSizeHard) = 0
+"soft" number of unique items (i.e. mSize) = 1
+
+Testing traversing "hard" inventory:
+bread:0  butter:1  
+
+Testing traversing "soft" inventory:
+butter:1  
+
+
+
+sample output 2:
+...
+at line #35: buy meat
+calling garbage collection...  <----------------
+
+inventory after garbage collection:
+"hard" number of unique items (i.e. mSizeHard) = 14
+"soft" number of unique items (i.e. mSize) = 12
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:1  cake:1  cereal:1  chicken:1  eggplant:2  fish:1  juice:2  milk:2  soup:2  tomato:4  
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:1  cake:1  cereal:1  chicken:1  eggplant:2  fish:1  juice:2  milk:2  soup:2  tomato:4  
+...

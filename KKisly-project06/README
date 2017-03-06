@@ -1,0 +1,31 @@
+project folder:
+KKsly-project06/
+
+Brief description of submitted files: 
+
+SuperMarket.java
+- Printing outputs with test cases
+- Includes main() method for running application
+- read inventory_log.txt file
+
+PrintObject.java
+- handles Printobject
+
+Traverser.java
+- implements traversal interface
+
+LazySearch.java
+- contains public and private versions of methods for AVL trees
+- contains inner class LazySTNode which created node
+
+ invenrory_log.txt
+- text file with test cases simulating inventory behavior
+
+ invenrory_short.txt
+- short version text file with test cases simulating inventory behavior
+
+ invenrory_short_debugging.txt
+- short version text file with test cases simulating inventory behavior with better human reading option
+
+ invenrory_invalid_removal.txt
+- short version text file with test cases simulating inventory behavior without item in the tree

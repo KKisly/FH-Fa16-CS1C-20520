@@ -1,0 +1,13 @@
+add aaa
+add bbb
+add ddd
+add ccc
+add eee
+add eee
+add eee
+add fff
+buy aaa
+buy ccc
+buy fff
+buy eee
+buy eee

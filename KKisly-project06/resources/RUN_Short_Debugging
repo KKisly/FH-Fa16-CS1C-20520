@@ -1,0 +1,258 @@
+-----------------------------------------------------
+-----------------------------------------------------
+Test file: Test file: resources/inventory_short_debugging.txt
+
+NOTES: Testing adding and removing items from the trees
+with the Lazy and Hard removal functionality. 
+Checking case with short version of items list for debugging purposes
+-----------------------------------------------------
+
+Garbage collection threshold = 2
+
+
+Update at line #1: add aaa
+"hard" number of unique items (i.e. mSizeHard) = 1
+"soft" number of unique items (i.e. mSize) = 1
+
+Testing traversing "hard" inventory:
+aaa:1  
+
+Testing traversing "soft" inventory:
+aaa:1  
+
+
+at line #1: add aaa
+First item: aaa:1 
+Last item: aaa:1 
+
+
+Update at line #2: add bbb
+"hard" number of unique items (i.e. mSizeHard) = 2
+"soft" number of unique items (i.e. mSize) = 2
+
+Testing traversing "hard" inventory:
+aaa:1  bbb:1  
+
+Testing traversing "soft" inventory:
+aaa:1  bbb:1  
+
+
+at line #2: add bbb
+First item: aaa:1 
+Last item: bbb:1 
+
+
+Update at line #3: add ddd
+"hard" number of unique items (i.e. mSizeHard) = 3
+"soft" number of unique items (i.e. mSize) = 3
+
+Testing traversing "hard" inventory:
+aaa:1  bbb:1  ddd:1  
+
+Testing traversing "soft" inventory:
+aaa:1  bbb:1  ddd:1  
+
+
+at line #3: add ddd
+First item: aaa:1 
+Last item: ddd:1 
+
+
+Update at line #4: add ccc
+"hard" number of unique items (i.e. mSizeHard) = 4
+"soft" number of unique items (i.e. mSize) = 4
+
+Testing traversing "hard" inventory:
+aaa:1  bbb:1  ccc:1  ddd:1  
+
+Testing traversing "soft" inventory:
+aaa:1  bbb:1  ccc:1  ddd:1  
+
+
+at line #4: add ccc
+First item: aaa:1 
+Last item: ddd:1 
+
+
+Update at line #5: add eee
+"hard" number of unique items (i.e. mSizeHard) = 5
+"soft" number of unique items (i.e. mSize) = 5
+
+Testing traversing "hard" inventory:
+aaa:1  bbb:1  ccc:1  ddd:1  eee:1  
+
+Testing traversing "soft" inventory:
+aaa:1  bbb:1  ccc:1  ddd:1  eee:1  
+
+
+at line #5: add eee
+First item: aaa:1 
+Last item: eee:1 
+
+
+Update at line #6: add eee
+"hard" number of unique items (i.e. mSizeHard) = 5
+"soft" number of unique items (i.e. mSize) = 5
+
+Testing traversing "hard" inventory:
+aaa:1  bbb:1  ccc:1  ddd:1  eee:2  
+
+Testing traversing "soft" inventory:
+aaa:1  bbb:1  ccc:1  ddd:1  eee:2  
+
+
+at line #6: add eee
+First item: aaa:1 
+Last item: eee:2 
+
+
+Update at line #7: add eee
+"hard" number of unique items (i.e. mSizeHard) = 5
+"soft" number of unique items (i.e. mSize) = 5
+
+Testing traversing "hard" inventory:
+aaa:1  bbb:1  ccc:1  ddd:1  eee:3  
+
+Testing traversing "soft" inventory:
+aaa:1  bbb:1  ccc:1  ddd:1  eee:3  
+
+
+at line #7: add eee
+First item: aaa:1 
+Last item: eee:3 
+
+
+Update at line #8: add fff
+"hard" number of unique items (i.e. mSizeHard) = 6
+"soft" number of unique items (i.e. mSize) = 6
+
+Testing traversing "hard" inventory:
+aaa:1  bbb:1  ccc:1  ddd:1  eee:3  fff:1  
+
+Testing traversing "soft" inventory:
+aaa:1  bbb:1  ccc:1  ddd:1  eee:3  fff:1  
+
+
+at line #8: add fff
+First item: aaa:1 
+Last item: fff:1 
+
+
+Update at line #9: buy aaa
+"hard" number of unique items (i.e. mSizeHard) = 6
+"soft" number of unique items (i.e. mSize) = 5
+
+Testing traversing "hard" inventory:
+aaa:0  bbb:1  ccc:1  ddd:1  eee:3  fff:1  
+
+Testing traversing "soft" inventory:
+bbb:1  ccc:1  ddd:1  eee:3  fff:1  
+
+
+at line #9: buy aaa
+First item: bbb:1 
+Last item: fff:1 
+
+
+Update at line #10: buy ccc
+"hard" number of unique items (i.e. mSizeHard) = 6
+"soft" number of unique items (i.e. mSize) = 4
+
+Testing traversing "hard" inventory:
+aaa:0  bbb:1  ccc:0  ddd:1  eee:3  fff:1  
+
+Testing traversing "soft" inventory:
+bbb:1  ddd:1  eee:3  fff:1  
+
+
+at line #10: buy ccc
+First item: bbb:1 
+Last item: fff:1 
+
+at line #10: buy ccc
+calling garbage collection...
+
+inventory after garbage collection:
+"hard" number of unique items (i.e. mSizeHard) = 4
+"soft" number of unique items (i.e. mSize) = 4
+
+Testing traversing "hard" inventory:
+aaa:0  bbb:1  ddd:1  eee:3  fff:1  
+
+Testing traversing "soft" inventory:
+bbb:1  ddd:1  eee:3  fff:1  
+
+
+
+Update at line #11: buy fff
+"hard" number of unique items (i.e. mSizeHard) = 4
+"soft" number of unique items (i.e. mSize) = 3
+
+Testing traversing "hard" inventory:
+aaa:0  bbb:1  ddd:1  eee:3  fff:0  
+
+Testing traversing "soft" inventory:
+bbb:1  ddd:1  eee:3  
+
+
+at line #11: buy fff
+First item: bbb:1 
+Last item: eee:3 
+
+
+Update at line #12: buy eee
+"hard" number of unique items (i.e. mSizeHard) = 4
+"soft" number of unique items (i.e. mSize) = 3
+
+Testing traversing "hard" inventory:
+aaa:0  bbb:1  ddd:1  eee:2  fff:0  
+
+Testing traversing "soft" inventory:
+bbb:1  ddd:1  eee:2  
+
+
+at line #12: buy eee
+First item: bbb:1 
+Last item: eee:2 
+
+
+Update at line #13: buy eee
+"hard" number of unique items (i.e. mSizeHard) = 4
+"soft" number of unique items (i.e. mSize) = 3
+
+Testing traversing "hard" inventory:
+aaa:0  bbb:1  ddd:1  eee:1  fff:0  
+
+Testing traversing "soft" inventory:
+bbb:1  ddd:1  eee:1  
+
+
+at line #13: buy eee
+First item: bbb:1 
+Last item: eee:1 
+
+
+State of inventory before cleanup:
+"hard" number of unique items (i.e. mSizeHard) = 4
+"soft" number of unique items (i.e. mSize) = 3
+
+Testing traversing "hard" inventory:
+aaa:0  bbb:1  ddd:1  eee:1  fff:0  
+
+Testing traversing "soft" inventory:
+bbb:1  ddd:1  eee:1  
+
+
+
+Final state of inventory after cleanup:
+"hard" number of unique items (i.e. mSizeHard) = 2
+"soft" number of unique items (i.e. mSize) = 3
+
+Testing traversing "hard" inventory:
+aaa:0  bbb:1  ddd:1  eee:1  
+
+Testing traversing "soft" inventory:
+bbb:1  ddd:1  eee:1  
+
+
+Done with SuperMarket.
