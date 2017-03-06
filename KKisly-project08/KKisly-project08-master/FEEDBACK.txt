@@ -1,0 +1,49 @@
+FEEDBACK:
+
+-10% late submission.
+
+
+For future, consider starting earlier. You had about two weeks to complete the project!
+To strengthen your understanding of how to use and implement a min heap, 
+	try coming back to this project and completing the second half.
+
+
+-0 Do *not* change method signatures. 
+   This includes the package name, list of file imports, visibility of methods, 
+	capitalization of method names, order of arguments,
+	handling of exceptions, etc.
+	Otherwise it results in errors, effecting your grade.
+    See sample compilation error below:
+Unhandled exception type FileNotFoundException   
+   
+   
+-2 For Phase 1, use a sorting algorithm based on MEM_SIZE
+   as required by project description.
+       "The sorting algorithm should depend on the number of elements." 
+   For example, in class SortFileData how did you justify whether Arrays.sort is the most 
+   efficient algorithm for a small data set such as an array of 20 numbers?
+
+
+   
+-11 Your implementation is missing key components of the project description.
+
+    The class MinHeapArrayMerger should merges pre-sorted Integer arrays without needing
+    to create an array. 
+    NOTE: The restriction on the array minHeap is that it cannot be greater than the specified memorySize.  
+    Below is a suggested approach:
+    1) Fills the HeapTuple[] minHeap with the minimum values from the ArrayList of Integer arrays inputChunks.
+    2) Create a FHbinHeap (or alternatively your own implementation of a heap structure) and 
+      sort the minimum values from minHeap using a Heap sort.
+    3) Write the heap of minimum values to the file.
+    While there are unsorted values repeat steps 1-3.
+     
+   
+-2 Missing Javadocs as required by project description.
+   See Syllabus and Program Guidelines in Introductions module. 
+  
+  
+-1 Missing README as required by project description.
+   See Syllabus and Program Guidelines in Introductions module. 
+
+-Bita.
+
