@@ -1,0 +1,51 @@
+FEEDBACK:
+
+-10% late submission.
+
+
+Good testing of the FIND_SONG_BY_ID.
+
+
+Good overloading of hashCode() and compareTo() methods in wrapper 
+   classes SongsCompInt and SongsInGenre.
+   
+   
+-1 Compilation error in class FHhashQPwFind:
+The method size() is undefined for the type SongEntry
+	Why are you returning the size of the SongEntry class?
+	Instead this should be returning the size of the "allSongs" ArrayList in class SongsCompGenre:
+	public ArrayList<SongEntry> getData() 
+	{	return allSongs;  }
+
+
+-1 Incomplete implementation of the number of songs in each genre.
+     The goal of SongsCompGenre class  ArrayList<String> songNames class field
+	is to keep track the number of songs in each genre.
+	To do that you simply need to add a song to an existing genre.
+	
+	The output in project description "The partial output of example using the full..." shows:	
+"Number of store songs in each genre:
+classic pop and rock 	  23895 
+                punk 	   3200 
+                etc.        ...
+Finding genre: pop
+..."
+
+	Make sure to always check the instructor output and
+	if something does not make sense ask a question either in office hours or by posting in discussion forum.
+	
+
+-0.5 The documentation for your TableGenerator class, GHahsQPwFind, etc methods describe methods 
+   with one or two words instead of complete sentences. 
+   zFor example, what does "table" mean? The description
+   seems misleading. For future provide a more clear description.
+   
+   Take a look at the Javadocs provided by Oracle for our favorite String class: 
+   https://docs.oracle.com/javase/7/docs/api/java/lang/String.html
+   
+   How are Javadocs files useful if they do not relay to the user the purpose of your classes and methods? 
+   
+   Next time minus for each class.
+
+-Bita.
+

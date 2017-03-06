@@ -1,0 +1,45 @@
+-----------------------------------------------------
+-----------------------------------------------------
+Test file: resources/music_genre_subset_short.json
+
+NOTES: Testing adding items to the hash tables and serch functionality in it.
+Checking case with short version of the songs' list.
+-----------------------------------------------------
+
+Total number of songs read 7 
+Test file for id table: resources/findIDs.txt 
+
+Finding song id: 2
+Song id 2 NOT found in tableOfSongIDs.
+
+Finding song id: 3
+Song id 3 NOT found in tableOfSongIDs.
+
+Finding song id: 4
+Song id 4 NOT found in tableOfSongIDs.
+
+Finding song id: 99
+Song id 99 NOT found in tableOfSongIDs.
+
+Finding song id: 99999
+Song id 99999 NOT found in tableOfSongIDs.
+Done with testing table of ids.
+
+Test file for genre table: resources/findGenres.txt 
+
+Number of store songs in each genre:
+     soul and reggae 	      0 
+                punk 	      0 
+
+Finding genre: pop
+Genre "pop" NOT found in tableOfGenres.
+
+Finding genre: classic pop and rock
+Genre "classic pop and rock" NOT found in tableOfGenres.
+
+Finding genre: FOOTHILL
+Genre "FOOTHILL" NOT found in tableOfGenres.
+Done with testing table of genres.
+
+
+Done with MyTunes.

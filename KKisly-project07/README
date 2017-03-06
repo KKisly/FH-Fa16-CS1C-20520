@@ -1,0 +1,40 @@
+project folder:
+KKsly-project07/
+
+Brief description of submitted files: 
+
+MyTunes.java
+- Printing outputs with test cases
+- Includes main() method for running application
+- run tests and search in both hash tables
+
+FHhashQP.java
+- implements quadratic probing for hashing
+
+FHhashQPFind.java
+- implements search functionality, class extends FHhashQP
+
+HashEntry.java
+- generic class for creating hashEntry object
+
+SongCompInt.java
+- Wrapper class for SongEntry object. Provides compare functionality based on ID field
+
+SongCompGenre.java
+- Wrapper class for SongEntry object. Provides compare functionality based on Genre field
+
+TableGenerator.java
+- generates and populates two tables for wrapper classes.
+- populates table of genres
+
+findGenres.txt
+- text file with test cases simulating search requests of type "genre"
+
+findID.txt
+- text file with test cases simulating search requests of type "ID"
+
+music_genre_subset.txt
+- text file with test cases simulating music playlist records behavior
+
+music_genre_subset_short.txt
+- short version text file with test cases simulating music playlist records behavior

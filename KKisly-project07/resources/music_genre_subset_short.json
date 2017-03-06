@@ -1,0 +1,51 @@
+{ "songs" : [
+{
+        "genre": "soul and reggae",
+        "artist_name": "Erykah Badu",
+        "title": "Danger",
+        "duration": "348.96934",
+        "song_id": "059596"
+    },
+    {
+        "genre": "soul and reggae",
+        "artist_name": "Erykah Badu",
+        "title": "Hollywood",
+        "duration": "332.32934",
+        "song_id": "059597"
+    },
+    {
+        "genre": "soul and reggae",
+        "artist_name": "Erykah Badu",
+        "title": "Think Twice",
+        "duration": "182.04689",
+        "song_id": "059598"
+    },
+    {
+        "genre": "soul and reggae",
+        "artist_name": "Erykah Badu / Dead Prez",
+        "title": "The Grind",
+        "duration": "169.42975",
+        "song_id": "059599"
+    },
+    {
+        "genre": "soul and reggae",
+        "artist_name": "Erykah Badu",
+        "title": "I Want You",
+        "duration": "653.13914",
+        "song_id": "059600"
+    },
+	{
+        "genre": "punk",
+        "artist_name": "Charge 69",
+        "title": "Tatouages",
+        "duration": "222.32771",
+        "song_id": "026267"
+    },
+    {
+        "genre": "punk",
+        "artist_name": "Charge 69",
+        "title": "Rock Star Attitude",
+        "duration": "179.90485",
+        "song_id": "026268"
+    }
+]}
