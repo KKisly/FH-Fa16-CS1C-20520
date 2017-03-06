@@ -1,0 +1,22 @@
+FEEDBACK:
+
+-10% late submission.
+
+Overall, well done in sticking to it this quarter.
+	In your future academic endeavors strive to start your projects (whatever they may be)
+	on day one. That way you are not rushed in hacking a last minute solution together.
+	Instead giving yourself time will give you time to explore different solutions and 
+	perhaps be creative and discovering your own!
+	
+	
+-1 Missing annotations on graph as required by project description:
+"annotate the graph with your findings (such as optimal recursion limit);"
+   What is the optimal recursion limit (range) you refer to in your README file?
+
+
+-1 Several missing requirements for each graph which makes it difficult to read.
+   What are the axis labels?
+   Clarify what does the legend label "Series 1" refers to. What array size is each one graphing?
+   
+-Bita.
+

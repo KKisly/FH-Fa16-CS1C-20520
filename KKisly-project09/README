@@ -1,0 +1,20 @@
+project folder:
+KKsly-project09/
+
+Conclusions: Optimal threshold for the Recursion Limit is laying in the range 40-60. For the tested range of arrays size from 20K to 2560K there is a plato on graphs with minimal sorting time. 
+
+Brief description of submitted files: 
+
+TestJavaQuick.java
+- Printing outputs raw .csv data from test cases
+- Includes main() method for running application
+- Includes method for testing QuickSorting Algorithms
+
+Arrat_size{number}.csv
+- output files with raw .csv data
+
+Arrat_size{number}.xlsx
+- output files with data and graphs
+
+Arrat_size{number}.jpg
+- output .jpg files with screenshot of graphs
